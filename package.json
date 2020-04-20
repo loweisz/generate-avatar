@@ -1,11 +1,11 @@
 {
   "name": "generate-avatar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jestgenPath",
     "build": "tsc"
   },
   "keywords": [
@@ -21,6 +21,9 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.4.0",
+    "ts-jest": "^25.4.0",
     "typescript": "^3.8.3"
   }
 }
