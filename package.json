@@ -1,14 +1,24 @@
 {
   "name": "generate-avatar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "typescropt",
+    "generate avatar",
+    "create",
+    "image"
+  ],
+  "author": {
+    "name": "Lorenz Weiß",
+    "email": "lorenz.weis@gmail.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "typescript": "^3.8.3"
