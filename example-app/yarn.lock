@@ -851,6 +851,11 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
+"@types/node@^13.13.1":
+  version "13.13.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.13.1.tgz#1ba94c5a177a1692518bfc7b41aec0aa1a14354e"
+  integrity sha512-uysqysLJ+As9jqI5yqjwP3QJrhOcUwBjHUlUxPxjbplwKoILvXVsmYWEhfmAQlrPfbRZmhJB007o4L9sKqtHqQ==
+
 "@types/q@^1.5.1":
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
@@ -2313,10 +2318,12 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
-generate-avatar@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/generate-avatar/-/generate-avatar-1.0.1.tgz#d3458eb204b48da6d669ae451a84be0295fe9f82"
-  integrity sha512-0lOr9czJwi+AmNT5+sO8/Mz+FAF+uysGdtJ4zsCipVJiqI4IKXCx6uiX7s8F51YRsH0xnNT2RfY0Fd4Z2SFgig==
+generate-avatar@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/generate-avatar/-/generate-avatar-1.0.4.tgz#deb878495f2a9c18b62c14db3f58e3217cd3761a"
+  integrity sha512-/iYtyUbcrcohS9pu0Ht2PFojRJFWMGYsi7Nb6cYDELca7WlSQhc69IiSMtGbIDisCMOIWBJ+TeP7EyWmz8P3Dw==
+  dependencies:
+    "@types/node" "^13.13.1"
 
 gensync@^1.0.0-beta.1:
   version "1.0.0-beta.1"
