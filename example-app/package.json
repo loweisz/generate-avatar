@@ -1,20 +1,17 @@
 {
-  "name": "example-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "nextjs-blog",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
-  },
-  "keywords": [],
-  "author": "“Lorenz <“lorenz.weis@gmail.com”> (“lorenzweiss.de)",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "generate-avatar": "^1.0.4",
+    "generate-avatar": "^1.0.6",
+    "next": "9.3.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "uuid": "^7.0.3"
   }
 }

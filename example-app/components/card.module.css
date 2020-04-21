@@ -1,0 +1,26 @@
+.card {
+  padding: 30px;
+  background: white;
+  border-radius: 5px;
+}
+
+.title {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 50px;
+}
+
+.subTitle {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+.newButton {
+  border: none;
+  background: grey;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 40px;
+}
