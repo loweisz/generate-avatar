@@ -1,4 +1,4 @@
-import { generateFromUUID } from "../../lib/index";
+import { generateFromUUID } from "generate-avatar";
 import { v4 as uuidv4 } from "uuid";
 
 const newBlob = generateFromUUID(uuidv4());
