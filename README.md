@@ -1,4 +1,11 @@
-![](logo.png)
+<p align="center">
+  <img width="460" height="300" src="logo.png">
+</p>
+
+[![License](https://img.shields.io/npm/l/generate-avatar.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+![Version](https://img.shields.io/npm/v/generate-avatar.svg?style=flat-square)
+![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/generate-avatar.svg?style=flat-square)
+![npm type definitions](https://img.shields.io/npm/types/generate-avatar.svg?style=flat-square)
 
 Check out the example: https://generate-avatar.now.sh/
 
@@ -10,7 +17,7 @@ You can pass your email, uuid, username etc. as an input and it will generate ev
 Which means you don't need to store any image in your database anymore.
 It generates that image on the fly whereever you want based on the id, email and so on.
 
-The best thing it's only 2kB (gzipped) big, so it can be basically used everywhere you want.
+The best thing it's only **5kB** big, so it can be basically used everywhere you want.
 
 ### Install
 
@@ -30,6 +37,6 @@ You pass in the string you want and it will return the svg in a string format:
 
 This will generate the following svg image.
 
-![](.png)
+![](example.png)
 
 You can [try it out here](https://generate-avatar.now.sh/). Try to pass in `example@test.com` and you will see the exact same image.
