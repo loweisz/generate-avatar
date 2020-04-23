@@ -6,7 +6,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jestgenPath",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "postversion": "npm publish"
   },
   "keywords": [
     "node",
