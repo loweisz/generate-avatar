@@ -6,8 +6,8 @@
 
 [![License](https://img.shields.io/npm/l/generate-avatar.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 ![Version](https://img.shields.io/npm/v/generate-avatar.svg?style=flat-square)
-![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/generate-avatar.svg?style=flat-square)
-![npm type definitions](https://img.shields.io/npm/types/generate-avatar.svg?style=flat-square)
+![bundle size (minified)](https://img.shields.io/bundlephobia/min/generate-avatar.svg?style=flat-square)
+![type definitions](https://img.shields.io/npm/types/generate-avatar.svg?style=flat-square)
 
 Check out the example: https://generate-avatar.now.sh/
 
