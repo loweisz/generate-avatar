@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./card.module.css";
-import { generateFromUUID } from "../../dist/index";
+import { generateFromString } from "generate-avatar";
 import { v4 } from "uuid";
 
 function Card() {
@@ -34,7 +34,7 @@ function Card() {
       </button>
       <div className={styles.card}>
         <div
-          dangerouslySetInnerHTML={{ __html: generateFromUUID(usedUUID) }}
+          dangerouslySetInnerHTML={{ __html: generateFromString(usedUUID) }}
           style={{ height: "300px", width: "300px" }}
         />
       </div>

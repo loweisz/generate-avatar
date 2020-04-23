@@ -30,6 +30,6 @@ You pass in the string you want and it will return the svg in a string format:
 
 This will generate the following svg image.
 
-![](logo.png)
+![](.png)
 
 You can [try it out here](https://generate-avatar.now.sh/). Try to pass in `example@test.com` and you will see the exact same image.
