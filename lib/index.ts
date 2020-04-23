@@ -1,3 +1,3 @@
-import { generateFromUUID } from "./generateFromUUID";
+import { generateFromString } from "./generateFromString";
 
-export { generateFromUUID };
+export { generateFromString };

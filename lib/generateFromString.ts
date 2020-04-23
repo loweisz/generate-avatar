@@ -41,7 +41,7 @@ function hydrateSVGBlog(data: UUIDSvgData): string {
   return svgString;
 }
 
-export function generateFromUUID(id: string): string {
+export function generateFromString(id: string): string {
   console.log(md5(id));
   const idArr = md5(id)
     .split("")
