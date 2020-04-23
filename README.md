@@ -2,6 +2,11 @@
   <img width="460" height="300" src="logo.png">
 </p>
 
+[![License](https://img.shields.io/npm/l/generate-avatar.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+![Version](https://img.shields.io/npm/v/generate-avatar.svg?style=flat-square)
+![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/generate-avatar.svg?style=flat-square)
+![npm type definitions](https://img.shields.io/npm/types/generate-avatar.svg?style=flat-square)
+
 Check out the example: https://generate-avatar.now.sh/
 
 # Generate Avatar
@@ -12,7 +17,7 @@ You can pass your email, uuid, username etc. as an input and it will generate ev
 Which means you don't need to store any image in your database anymore.
 It generates that image on the fly whereever you want based on the id, email and so on.
 
-The best thing it's only 2kB (gzipped) big, so it can be basically used everywhere you want.
+The best thing it's only **5kB** big, so it can be basically used everywhere you want.
 
 ### Install
 
