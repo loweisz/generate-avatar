@@ -1,3 +1,5 @@
+import { md5 } from "./md5hash";
+
 interface UUIDSvgData {
   paths: string[];
   colors: string[];
@@ -40,7 +42,10 @@ function hydrateSVGBlog(data: UUIDSvgData): string {
 }
 
 export function generateFromUUID(id: string): string {
-  const idArr = id.split("").filter((el) => el !== "-");
+  console.log(md5(id));
+  const idArr = md5(id)
+    .split("")
+    .filter((el) => el !== "-");
   const backgroundColor = idArr.splice(0, 6).join("");
   const elColor = idArr.splice(idArr.length - 6, idArr.length).join("");
   const arr = [...Array(10)].map(() =>

@@ -2,6 +2,7 @@
   padding: 30px;
   background: white;
   border-radius: 5px;
+  max-width: 400px;
 }
 
 .title {
@@ -23,4 +24,13 @@
   margin-top: 30px;
   border-radius: 5px;
   font-size: 40px;
+}
+
+.valueInput {
+  margin-top: 30px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
