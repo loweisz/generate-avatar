@@ -2,9 +2,10 @@
 	<img src="logo.png" alt="generate-avatar" />
 </div>
 <p>
-  <div align="center">
-  <h2>👆 The logo is: `generateFromString('generateavatar')`</h2>
-  </div>
+<div align="center">
+👆 The logo is: `generateFromString('generateavatar')`
+</div>
+<br/>
 </p>
 
 [![License](https://img.shields.io/npm/l/generate-avatar.svg?style=flat-square)](http://opensource.org/licenses/MIT)
