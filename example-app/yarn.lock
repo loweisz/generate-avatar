@@ -2522,10 +2522,10 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
-generate-avatar@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/generate-avatar/-/generate-avatar-1.3.1.tgz#2ab10e5e4b36a7eee8da19756bd7679df66f5523"
-  integrity sha512-pUzQPwYurqO1TPeqAOgcpIZSiIxB7UabWLeQspiyb/g7mPu/cZ0/JGhbJPBKgB4/MxIyOX3qYUZcedT4zrR/Wg==
+generate-avatar@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/generate-avatar/-/generate-avatar-1.4.0.tgz#d3842a59b35cecf17644bcd061947f463962de41"
+  integrity sha512-PiG08M47QjQKP1J8PhBD5/7DR1zQ31tue44DVHr/5dHWKvEiNHF+5cfzt+B71CGio7wnTsA0XmTvX6tqJ0i5kA==
   dependencies:
     "@types/node" "^13.13.1"
 
