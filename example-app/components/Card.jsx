@@ -6,58 +6,60 @@ import { v4 } from "uuid";
 
 function Card() {
   const router = useRouter();
-  const [usedUUID, setUsedUUID] = useState(
+  const [usedString, setUsedString] = useState(
     router.query.str || "generateavatar"
   );
 
   useEffect(() => {
-    if (usedUUID === "generateavatar" && router.query.str) {
-      setUsedUUID(router.query.str);
+    if (usedString === "generateavatar" && router.query.str) {
+      setUsedString(router.query.str);
     }
   }, [router.query.str]);
 
   useEffect(() => {
-    if (usedUUID) {
-      router.push(`${router.pathname}?str=${usedUUID}`);
+    if (usedString) {
+      router.push(`${router.pathname}?str=${usedString}`);
     } else {
       router.push(`${router.pathname}`);
     }
-  }, [usedUUID]);
+  }, [usedString]);
 
   const renderNewImage = () => {
-    setUsedUUID(v4());
+    setUsedString(v4());
   };
 
   const inputChange = (e) => {
-    setUsedUUID(e.target.value);
+    setUsedString(e.target.value);
   };
 
   return (
     <div className={styles.wrapper}>
-      <span className={styles.title}>Generate Avatar</span>
-      <span className={styles.subTitle}>
-        Generate any avatar with any string, which is 100% reproducable and
-        fingerprinted.
-      </span>
-      <input
-        className={styles.valueInput}
-        value={usedUUID}
-        onChange={inputChange}
-      />
-      <span className={styles.subTitle}>
-        Generate an image from a random uuid
-      </span>
-      <button onClick={renderNewImage} className={styles.newButton}>
-        Generate a random uuid
-      </button>
-      <h2>Download image below</h2>
-      {usedUUID && (
+      <div className={styles.section}>
+        <span className={styles.title}>Generate Avatar</span>
+        <span className={styles.subTitle}>
+          Generate every avatar with any string, which is 100% reproducable and
+          fingerprinted.
+        </span>
+        <button onClick={renderNewImage} className={styles.newButton}>
+          Generate a random input (uuid)
+        </button>
+        <span className={styles.subTitle}>Or type in your own:</span>
+        <input
+          className={styles.valueInput}
+          value={usedString}
+          onChange={inputChange}
+        />
+      </div>
+      <div className={styles.section}>
+        <h2>Download image below</h2>
         <div className={styles.card}>
-          <img
-            src={`data:image/svg+xml;utf8,${generateFromString(usedUUID)}`}
-          />
+          {usedString && (
+            <img
+              src={`data:image/svg+xml;utf8,${generateFromString(usedString)}`}
+            />
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 }

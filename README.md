@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="logo.png">
-</p>
+![](logo.png)
 
 👆 The logo is: `generateFromString('generateavatar')`
 

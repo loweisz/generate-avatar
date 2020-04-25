@@ -1,14 +1,16 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: #9ac14d;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.title {
-  color: red;
-  font-size: 40px;
+@media only screen and (max-width: 950px) {
+  .container {
+    height: auto;
+    margin-bottom: 100px;
+  }
 }

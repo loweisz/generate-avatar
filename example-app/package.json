@@ -10,6 +10,7 @@
   "dependencies": {
     "generate-avatar": "^1.4.0",
     "next": "9.3.5",
+    "next-images": "^1.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "uuid": "^7.0.3"
