@@ -1,4 +1,6 @@
-![](logo.png)
+<div align="center">
+	<img width="600" height="600" src="logo.png" alt="generate-avatar" />
+</div>
 
 👆 The logo is: `generateFromString('generateavatar')`
 
