@@ -1,10 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import styles from "./card.module.css";
 import { generateFromString } from "generate-avatar";
 import { v4 } from "uuid";
 
 function Card() {
-  const [usedUUID, setUsedUUID] = useState(v4());
+  const router = useRouter();
+  const [usedUUID, setUsedUUID] = useState(
+    router.query.str || "generateavatar"
+  );
+
+  useEffect(() => {
+    if (usedUUID === "generateavatar" && router.query.str) {
+      setUsedUUID(router.query.str);
+    }
+  }, [router.query.str]);
+
+  useEffect(() => {
+    if (usedUUID) {
+      router.push(`${router.pathname}?str=${usedUUID}`);
+    } else {
+      router.push(`${router.pathname}`);
+    }
+  }, [usedUUID]);
 
   const renderNewImage = () => {
     setUsedUUID(v4());
@@ -32,9 +50,14 @@ function Card() {
       <button onClick={renderNewImage} className={styles.newButton}>
         Generate a random uuid
       </button>
-      <div className={styles.card}>
-        <img src={`data:image/svg+xml;utf8,${generateFromString(usedUUID)}`} />
-      </div>
+      <h2>Download image below</h2>
+      {usedUUID && (
+        <div className={styles.card}>
+          <img
+            src={`data:image/svg+xml;utf8,${generateFromString(usedUUID)}`}
+          />
+        </div>
+      )}
     </div>
   );
 }

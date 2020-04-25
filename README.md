@@ -37,8 +37,14 @@ You pass in the string you want and it will return the svg in a string format:
   generateFromString("example@test.com")
 ```
 
+This will generate the svg in a string format. In order to use it on your webpage or wherever you want you for example use the [image data src attribute](https://css-tricks.com/lodge/svg/09-svg-data-uris/) like this:
+
+```
+<img src={`data:image/svg+xml;utf8,${generateFromString("example@test.com")}`} />
+```
+
 This will generate the following svg image.
 
 ![](example.png)
 
-You can [try it out here](https://generate-avatar.now.sh/). Try to pass in `example@test.com` and you will see the exact same image.
+Or you can [try it out here](https://generate-avatar.now.sh/?str=example@test.com) and download the image.
