@@ -6,6 +6,15 @@ interface UUIDSvgData {
   background: string;
 }
 
+function hexToRgb(hex: string) {
+  var bigint = parseInt(hex, 16);
+  var r = (bigint >> 16) & 255;
+  var g = (bigint >> 8) & 255;
+  var b = bigint & 255;
+
+  return r + "," + g + "," + b;
+}
+
 export function invertHex(hex: string): string {
   return (Number(`0x1${hex}`) ^ 0xffffff).toString(16).substr(1).toUpperCase();
 }
@@ -23,7 +32,15 @@ export function generatePath(curveVal: number, posVal: number, index: number) {
 }
 
 function hydrateSVGBlog(data: UUIDSvgData): string {
-  const svgString = `<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"><rect id="bg" width="300" height="300" fill="#${data.background}" /><path d="${data.paths[0]}" fill="#${data.colors[0]}" /><path d="${data.paths[1]}" fill="#${data.colors[1]}" /><path d="${data.paths[2]}" fill="#${data.colors[2]}" /></svg>`;
+  const svgString = `<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"><rect id="bg" width="300" height="300" fill="rgb(${hexToRgb(
+    data.background
+  )})" /><path d="${data.paths[0]}" fill="rgb(${hexToRgb(
+    data.colors[0]
+  )})" /><path d="${data.paths[1]}" fill="rgb(${hexToRgb(
+    data.colors[1]
+  )})" /><path d="${data.paths[2]}" fill="rgb(${hexToRgb(
+    data.colors[2]
+  )})" /></svg>`;
   return svgString;
 }
 

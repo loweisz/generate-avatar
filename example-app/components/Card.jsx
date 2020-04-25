@@ -33,10 +33,7 @@ function Card() {
         Generate a random uuid
       </button>
       <div className={styles.card}>
-        <div
-          dangerouslySetInnerHTML={{ __html: generateFromString(usedUUID) }}
-          style={{ height: "300px", width: "300px" }}
-        />
+        <img src={`data:image/svg+xml;utf8,${generateFromString(usedUUID)}`} />
       </div>
     </div>
   );
