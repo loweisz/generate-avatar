@@ -13,7 +13,7 @@
 ![bundle size (minified)](https://img.shields.io/bundlephobia/min/generate-avatar.svg?style=flat-square)
 ![type definitions](https://img.shields.io/npm/types/generate-avatar.svg?style=flat-square)
 
-Check out the example: https://generate-avatar.now.sh/
+Check out the example and download your avatar: https://generate-avatar.now.sh/
 
 # Why use Generate Avatar?
 
