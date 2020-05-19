@@ -2,14 +2,10 @@
   position: fixed;
   height: 70px;
   width: 70px;
-  background-color: red;
   left: 20px;
   bottom: 20px;
   border-radius: 22px;
-  background: #9ac14d;
-  box-shadow: -7px -7px 14px #74913a, 7px 7px 14px #c1f160;
   cursor: pointer;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,10 +16,6 @@
   .icon {
     box-shadow: none;
   }
-}
-
-.icon:hover {
-  box-shadow: -14px -14px 28px #74913a, 14px 14px 28px #c1f160;
 }
 
 .icon img {

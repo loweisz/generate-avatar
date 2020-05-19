@@ -3,15 +3,16 @@
   background: white;
   max-height: 300px;
   max-width: 300px;
-  border-radius: 5px;
+
   display: flex;
   justify-content: center;
-  box-shadow: -6px -6px 18px #74913a, 6px 6px 18px #c1f160;
 }
 
 .card img {
   height: 100%;
   width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .section {
@@ -32,14 +33,12 @@
 
 .title {
   margin-bottom: 30px;
-  color: white;
   text-align: center;
   font-size: 50px;
 }
 
 .subTitle {
   margin-bottom: 30px;
-  color: white;
   font-size: 24px;
   text-align: center;
 }
@@ -51,10 +50,10 @@
   width: 100%;
   border-radius: 22px;
   height: 50px;
-  background: linear-gradient(145deg, #8bae45, #a5cf52);
-  box-shadow: 6px 6px 14px #80a040, -6px -6px 14px #b4e25a;
-  color: white;
   cursor: pointer;
+  background: black;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .newButton:focus {
@@ -63,21 +62,20 @@
 
 .valueInput {
   margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   width: 100%;
   box-sizing: border-box;
   height: 50px;
   padding: 12px 24px;
   font-size: 20px;
   border-radius: 2px;
-  border: none;
+  border: 2px solid black;
   border-radius: 22px;
-  box-shadow: -6px -6px 18px #74913a, 6px 6px 18px #c1f160;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
-  color: white;
 }
 
 @media only screen and (max-width: 950px) {
