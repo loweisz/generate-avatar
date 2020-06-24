@@ -12,6 +12,10 @@
   transition: all 300ms ease;
 }
 
+.twitter {
+  left: 110px;
+}
+
 @media only screen and (max-width: 950px) {
   .icon {
     box-shadow: none;

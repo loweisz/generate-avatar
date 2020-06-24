@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "./index.module.css";
 import Card from "../components/Card";
 import GithubIcon from "../components/GithubIcon";
+import TwitterIcon from "../components/TwitterIcon";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <Card />
       <GithubIcon />
+      <TwitterIcon />
     </div>
   );
 }

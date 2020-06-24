@@ -17,12 +17,12 @@ Check out the example and download your avatar: https://generate-avatar.now.sh/
 
 # Why use Generate Avatar?
 
-A lightweight and blazing fast avatar generator, which is 100% fingerprinted and unique on any input you want.
+A lightweight and blazing fast avatar generator, which is 100% fingerprinted and unique for any input you want.
 
 Pass in your email, uuid, username etc. as an input and it will generate everytime the same unique svg based avatar for you.
 
 Which means you don't have to store any generated images in your database anymore.
-It generates those images on the fly whereever you want based on the id, email and so on.
+It generates those images on the fly wherever you want based on the id, email and so on.
 
 The best thing it's only **5 kB** small, so it can be basically used everywhere you want.
 

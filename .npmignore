@@ -1,2 +1,7 @@
 lib/
 example-app/
+yarn.lock
+example.png
+example.svg
+jest.config.jest
+logo.png
