@@ -55,11 +55,13 @@ This will generate the svg in a string format. In order to use it, you can use t
 ```
 [Try it out here](https://generate-avatar.now.sh/?str=example@test.com) and download the image. You will see that it generates the exact same image everytime. Isn't that amazing ?
 
-<div style="display: flex">
-	<img src="examples/example_one.svg" alt="generate-avatar" />
-	<img src="examples/example_two.svg" alt="generate-avatar" />
-	<img src="examples/example_three.svg" alt="generate-avatar" />
-	<img src="examples/example_four.svg" alt="generate-avatar" />
-    <img src="examples/example_five.svg" alt="generate-avatar" />
-    <img src="examples/example_six.svg" alt="generate-avatar" />
-</div>
+<table>
+  <tr>
+	<td valign="top"><img src="examples/example_one.svg" alt="generate-avatar" /></td>
+	<td valign="top"><img src="examples/example_two.svg" alt="generate-avatar" /></td>
+	<td valign="top"><img src="examples/example_three.svg" alt="generate-avatar" /></td>
+	<td valign="top"><img src="examples/example_four.svg" alt="generate-avatar" /></td>
+	<td valign="top"><img src="examples/example_five.svg" alt="generate-avatar" /></td>
+	<td valign="top"><img src="examples/example_six.svg" alt="generate-avatar" /></td>
+  </tr>
+</table>
