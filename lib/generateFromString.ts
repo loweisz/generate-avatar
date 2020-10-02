@@ -7,10 +7,10 @@ interface UUIDSvgData {
 }
 
 function hexToRgb(hex: string) {
-  var bigint = parseInt(hex, 16);
-  var r = (bigint >> 16) & 255;
-  var g = (bigint >> 8) & 255;
-  var b = bigint & 255;
+  const bigint = parseInt(hex, 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
 
   return r + "," + g + "," + b;
 }
@@ -32,7 +32,7 @@ export function generatePath(curveVal: number, posVal: number, index: number) {
 }
 
 function hydrateSVGBlog(data: UUIDSvgData): string {
-  const svgString = `<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"><rect id="bg" width="300" height="300" fill="rgb(${hexToRgb(
+  return `<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"><rect id="bg" width="300" height="300" fill="rgb(${hexToRgb(
     data.background
   )})" /><path d="${data.paths[0]}" fill="rgb(${hexToRgb(
     data.colors[0]
@@ -41,7 +41,6 @@ function hydrateSVGBlog(data: UUIDSvgData): string {
   )})" /><path d="${data.paths[2]}" fill="rgb(${hexToRgb(
     data.colors[2]
   )})" /></svg>`;
-  return svgString;
 }
 
 export function generateFromString(id: string): string {

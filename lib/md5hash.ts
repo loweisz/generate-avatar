@@ -168,8 +168,7 @@ const hex_chr = "0123456789abcdef".split("");
 
 function rhex(n: number): string {
   let s = "";
-  let j = 0;
-  for (j = 0; j < 4; j++)
+  for (let j = 0; j < 4; j++)
     s += hex_chr[(n >> (j * 8 + 4)) & 0x0f] + hex_chr[(n >> (j * 8)) & 0x0f];
   return s;
 }
