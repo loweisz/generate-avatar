@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "generate-avatar": "^1.4.0",
+    "generate-avatar": "^1.4.6",
     "next": "9.3.5",
     "next-images": "^1.4.0",
     "react": "16.13.1",
