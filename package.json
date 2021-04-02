@@ -1,6 +1,6 @@
 {
   "name": "generate-avatar",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "description": "Generate your 100% fingerprinted example avatar from id, email, username etc.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
