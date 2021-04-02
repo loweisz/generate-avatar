@@ -12,14 +12,21 @@
   },
   "keywords": [
     "node",
-    "typescropt",
+    "typescript",
     "generate avatar",
+    "avatar",
+    "svg",
     "create",
     "image"
   ],
   "author": {
     "name": "Lorenz Weiß",
     "email": "lorenz.weis@gmail.com"
+  },
+  "website": "https://github.com/loweisz/generate-avatar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loweisz/generate-avatar.git"
   },
   "license": "MIT",
   "devDependencies": {
